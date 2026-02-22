@@ -1,0 +1,59 @@
+/* basic page setup */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6; /* light gray for page background */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50; /* darker header for contrast */
+    color: white;
+}
+
+/* grid for all media cards */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    padding: 20px;
+}
+
+/* each card has its own background and slight shadow */
+.media-card {
+    background-color: #f9f9f9; /* off-white so page and card differ */
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* images fill the card width */
+.media-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* audio and iframe full width */
+.media-card audio,
+.media-card iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* text for description under each media item */
+.description {
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+/* credit text smaller and subtle */
+.credit {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 4px;
+}
