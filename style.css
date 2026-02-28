@@ -1,0 +1,73 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Grid Layout */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Media Cards */
+.media-card {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.media-card h2 {
+    margin-bottom: 10px;
+}
+
+/* Images, Audio, Video */
+.media-card img,
+.media-card audio,
+.media-card iframe {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Text Styling */
+.description {
+    margin-bottom: 8px;
+}
+
+.credit {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
